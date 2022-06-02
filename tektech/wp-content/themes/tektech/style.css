@@ -1,0 +1,41 @@
+/*
+Theme Name: tektech
+Author: Tek-Tech
+Author URI: http://tektech.rf.gd
+Version: 1.0
+ */
+*{
+    border-radius: 3.5px;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #111b;
+    min-height: 100vh;
+    margin-top: 2.5%;
+}
+.site-header{
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+    width: 100%;
+    min-height: 55vh;
+}
+.tt-blogpost{
+    padding: 2%;
+}
+div.container{
+    background: white;
+    padding-bottom: 5vh;
+    padding: 5%;
+    margin-bottom: 2.5%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.navigation-menu{
+    display: flex;
+    width: 100%;
+    background: teal;
+}
