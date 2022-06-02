@@ -1,41 +1,68 @@
 /*
 Theme Name: tektech
-Author: Tek-Tech
-Author URI: http://tektech.rf.gd
+Author: El-Hadji Seybatou Mbengue (dev0ps21)
+Author URI: http://mrmbengue.rf.gd
 Version: 1.0
  */
 *{
-    border-radius: 3.5px;
+    color:#ffff;
+}
+a{
+    color: #27ccbfff;
 }
 body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #111b;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: #111e;
+    width: 100vw;
     min-height: 100vh;
-    margin-top: 2.5%;
 }
 .site-header{
     display: flex;
     flex-direction: column;
-    flex-direction: center;
+    justify-content: space-between;
     width: 100%;
-    min-height: 55vh;
+}
+.site-header > *,.site-footer > *{
+    padding: 2%;
 }
 .tt-blogpost{
     padding: 2%;
 }
 div.container{
-    background: white;
-    padding-bottom: 5vh;
-    padding: 5%;
-    margin-bottom: 2.5%;
     display: flex;
     flex-direction: column;
     text-align: justify;
+    border-radius: 3.5px;
 }
-.navigation-menu{
+.navigation-menu,.navigation-menu .menu{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    background: teal;
+    justify-content: center;
+}
+.site-header .navigation-menu{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.site-header .navigation-menu .menu{
+    padding: 0;
+    margin: 0;
+}
+.site-header .navigation-menu .menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.site-header .navigation-menu .menu ul li{
+    list-style-type: none;
+    padding: 2%;
+    margin: 0.5%;
 }
