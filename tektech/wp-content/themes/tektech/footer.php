@@ -5,7 +5,6 @@
             <nav class="navigation-menu">
                 <?php wp_nav_menu() ?>
             </nav>
-            <p><?php bloginfo( 'name' ) ?></p>
         </footer>
     </div>
 <?php wp_footer() ?>

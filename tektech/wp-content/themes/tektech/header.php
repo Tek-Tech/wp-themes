@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <title><?php bloginfo( 'name' ); ?></title>
+    <title><?php bloginfo( 'name' ); ?> &#8212; <?php bloginfo( 'description' ); ?></title>
     <?php
         wp_head()
     ?>
