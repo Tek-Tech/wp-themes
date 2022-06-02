@@ -52,6 +52,8 @@
             'flex-height'        => true,
         );
         add_theme_support( 'custom-header', $args );
+        add_theme_support( 'custom-logo' );
+    
     }
     add_action( 'after_setup_theme', 'themename_custom_header_setup' );
 

@@ -38,6 +38,40 @@ body{
 .site-header > *,.site-footer > *{
     padding: 2%;
 }
+.site-header .headerbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.site-header .headerbar .header-search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.site-header .headerbar .headerself{
+    display: flex;
+    flex-direction: row;
+}
+.site-header .headerbar .headerself h1,.site-header .headerbar .headerself h4{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.site-header .headerbar .headerself h1{
+    min-width: 25%;
+}
+.site-header .headerself .logobox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+    height: 100%;
+}
+.site-header .logobox img{
+    width: 50%;
+    height: 50%;
+    margin: 25%;
+}
 .tt-blogpost{
     padding: 2%;
 }
@@ -111,7 +145,12 @@ div.container{
 .sidebar-column{
     background: #1113;
     display: flex;
+    flex-direction: column;
     width: 10%;
     padding: 5%;
     min-height: 50vh;
+}
+.sidebar-column .widget{
+    display: flex;
+    flex-direction: column;
 }
