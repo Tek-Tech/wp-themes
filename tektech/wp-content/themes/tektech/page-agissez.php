@@ -25,14 +25,16 @@
                 </li>
             </ul>
             <div  class='content-description' style='background:url("/tektechsites.png");background-size:100% 100%;'>
-                <p class='content-text'>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt itaque voluptatibus saepe est aliquid voluptatum. Alias adipisci nihil fugiat, ipsum nemo nulla quo beatae sunt corporis nobis, eius vero?
-                </p>
-                <button class='content-action' onClick="event.target.querySelector('a').click()">
-                    <a href="http://sites-tektech.rf.gd/index.php/commander?p=commander#commander" target="_blank" rel="noopener noreferrer">
-                        action
-                    </a>
-                </button>
+                <div class='content'>
+                    <p class='content-text'>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt itaque voluptatibus saepe est aliquid voluptatum. Alias adipisci nihil fugiat, ipsum nemo nulla quo beatae sunt corporis nobis, eius vero?
+                    </p>
+                    <button class='content-action' onClick="event.target.querySelector('a').click()">
+                        <a href="http://sites-tektech.rf.gd/index.php/commander?p=commander#commander" target="_blank" rel="noopener noreferrer">
+                            action
+                        </a>
+                    </button>
+                </div>
             </div>
         </div>
     </article>
@@ -60,14 +62,16 @@
                 </li>
             </ul>
             <div class='content-description' style='background:url("/tektechnews.png");background-size:100% 100%;'>
-                <p class='content-text'>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt itaque voluptatibus saepe est aliquid voluptatum. Alias adipisci nihil fugiat, ipsum nemo nulla quo beatae sunt corporis nobis, eius vero?
-                </p>
-                <button  class='content-action' onClick="event.target.querySelector('a').click()">
-                    <a href="http://news-tektech.rf.gd" target="_blank" rel="noopener noreferrer">
-                        action
-                    </a>
-                </button>
+                <div class='content'>
+                    <p class='content-text'>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt itaque voluptatibus saepe est aliquid voluptatum. Alias adipisci nihil fugiat, ipsum nemo nulla quo beatae sunt corporis nobis, eius vero?
+                    </p>
+                    <button  class='content-action' onClick="event.target.querySelector('a').click()">
+                        <a href="http://news-tektech.rf.gd" target="_blank" rel="noopener noreferrer">
+                            action
+                        </a>
+                    </button>
+                </div>
             </div>
         </div>
     </article>
