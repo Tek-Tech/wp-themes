@@ -76,6 +76,7 @@ body{
     min-height: 100vh;
 }
 .service-box{
+    margin: 0;
     animation: scaley 2.5s 1;
     background: #111111dd;
     display:flex;
@@ -180,6 +181,11 @@ body{
     box-shadow: 0 0 0.8em 0.05em  #ffffff33;
     width: 100%;
     animation: fromTop 2s 1;
+}
+.site-header.has-header-background{
+    background-image: var(--headerbgurl);
+    min-height:100vh;
+    background-size: 100% 100%;
 }
 .site-footer{
     box-shadow: 0 0 0.8em 0.05em  #ffffff33;
@@ -326,11 +332,75 @@ div.container{
 #searchform:hover{
     opacity: 1;
 }
-
+.mobilenavigation-menu{
+    display: none;
+}
 
 
 
 
 @media screen and (max-width:997px) {
-    
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        min-height: 100vh;
+        font-size: 1rem;
+    }
+    .site-header.has-header-background{
+        background-image: var(--headerbgurl);
+        min-height:80vh;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        background-size: 100% 100%;
+    }
+    .site-header .headerbar .headerself{
+        display: flex;
+        flex-direction: column;
+    }
+    .site-header .headerbar .headerself > *{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .site-header .navigation-menu{
+        display: none;
+    }
+
+    .container.mainbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .site-header .headerself .logobox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .site-header .logobox img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .site-header{
+        border-radius: 0;
+    }
+    .sidebar-column{
+        text-align: center;
+        background: #111d;
+        border-radius: 0.5em;
+        box-shadow: 0 0 0.8em 0.05em #fff1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 90%;
+        padding: 5%;
+        position: sticky;
+    }
 }

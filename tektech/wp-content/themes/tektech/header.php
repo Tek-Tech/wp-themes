@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
 
     <div class='container'>
-        <header class="site-header" <?php if ( get_header_image() ) : ?> style='background-size:100% 100%;min-height:100vh;background-image:url(<?php header_image() ?>);' <?php endif; ?>>
+        <header class="site-header <?php if ( get_header_image() ) : ?> has-header-background"  style='--headerbgurl:url(<?php header_image() ?>)' <?php endif; ?>>
             <div class='headerbar'>
 
                 <div class="header-search">
@@ -29,6 +29,9 @@
                 </div>
             </div>
             <nav class="navigation-menu">
+			    <?php wp_nav_menu() ?>
+            </nav>
+            <nav class="mobilenavigation-menu">
 			    <?php wp_nav_menu() ?>
             </nav>
         </header>
