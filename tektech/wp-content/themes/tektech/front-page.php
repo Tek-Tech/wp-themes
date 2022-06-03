@@ -1,9 +1,9 @@
 <?php
     get_header();
 ?>
-<div class='main-content'>
+<article class='main-content'>
 
-</div>
+</article>
 <div class="sidebar-column"><!-- sidebar-column -->
     <?php wp_nav_menu() ?>
     <?php dynamic_sidebar( 'rightsidebar' ) ?>

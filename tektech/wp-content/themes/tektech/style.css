@@ -29,6 +29,68 @@ body{
     width: 100vw;
     min-height: 100vh;
 }
+.service-box{
+    background: #11111155;
+    display:flex;
+    flex-direction:column;
+    color: white;
+    min-height: 80vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 12.5vh;
+}
+.service-box .container-title{
+    padding:4%;
+    margin: 0;
+    display:flex;
+    color:#27ccbfff;
+    text-align: center;
+    flex-direction:column;
+    justify-content:center;
+    height:6%;
+    overflow: hidden;
+}
+.service-box .container-content{
+    display:flex;
+    height: 90%;
+    flex-direction:row;
+}
+.service-box .container-content .content-proposition{
+    padding: 2%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 30%;
+    height: 90%;
+    margin: 0;
+}
+.service-box .container-content .content-proposition li::before{
+    content: "#|";
+}
+.service-box .container-content .content-proposition li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.service-box .container-content .content-description{
+    display:flex;
+    padding: 2%;
+    flex-direction:column;
+    background: #11111155;
+    justify-content:space-between;
+    margin: 0;    
+    margin-top: 8%;
+    width: 62%;
+}
+.service-box .container-content .content-description .content-action{
+    margin: 0;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2.5%;
+    background: #ffffff76;
+    border: none;
+    border-radius: 0.5em;
+}
 .site-header{
     display: flex;
     flex-direction: column;
