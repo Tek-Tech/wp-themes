@@ -44,18 +44,20 @@ Version: 1.0
 
 button,input[type='button'],input[type='submit']{
     margin: 0;
-    padding: 2.5%;
+    padding: 5.5%;
     background: #ffffff76;
     border: none;
     color: white;
     font-weight: bolder;
     border-radius: 0.5em;
     cursor: pointer;
+    min-width: 15em;
 }
 article{
     background: #1113;
     margin-bottom: 2%;
     animation: scaley 1.5s 1;
+    box-shadow: 0 0 0.8em 0.05em #fff1;
 }
 a{
     color: white;
@@ -75,13 +77,15 @@ body{
 }
 .service-box{
     animation: scaley 2.5s 1;
-    background: #11111155;
+    background: #111111dd;
     display:flex;
     flex-direction:column;
+    border-top-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
     color: white;
     min-height: 80vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
     margin-top: 12.5vh;
 }
 .service-box .container-title{
@@ -104,18 +108,26 @@ body{
     padding: 2%;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-around;
     width: 30%;
     height: 90%;
     margin: 0;
 }
 .service-box .container-content .content-proposition li::before{
-    content: "#|";
+    content: ">";
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    margin: 1%;
+    font-size: 15px;
 }
 .service-box .container-content .content-proposition li{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    padding: 1%;
+    width: 92%;
+    font-size: 1rem;
 }
 .service-box .container-content .content-description{
     display:flex;
@@ -132,9 +144,17 @@ body{
     margin-left: 30%;
     margin-right: 30%;
     padding: 2.5%;
-    background: #ffffff76;
+    background: #ffffffbb;
     border: none;
+    color: black;
+    font-weight: bolder;
     border-radius: 0.5em;
+    min-height: 10vh;
+}
+.service-box .container-content .content-description .content-action a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
 }
 .site-header{
     display: flex;
@@ -142,12 +162,12 @@ body{
     justify-content: space-between;
     border-bottom-left-radius: 4.5em;
     border-bottom-right-radius: 4.5em;
-    box-shadow: 0 0 0.25em 0.025em #ffffff33;
+    box-shadow: 0 0 0.8em 0.05em  #ffffff33;
     width: 100%;
     animation: fromTop 2s 1;
 }
 .site-footer{
-    box-shadow: 0 0 0.25em 0.025em #ffffff33;
+    box-shadow: 0 0 0.8em 0.05em  #ffffff33;
     border-top-left-radius: 4.5em;
     border-top-right-radius: 4.5em;
 }
@@ -259,12 +279,17 @@ div.container{
     width: 100%;
 }
 .sidebar-column{
-    background: #1113;
+    background: #111d;
+    border-top-left-radius: 2.5em;
+    border-bottom-left-radius: 2.5em;
+    box-shadow: 0 0 0.8em 0.05em #fff1;
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
     width: 10%;
     padding: 5%;
-    min-height: 50vh;
+    position: sticky;
 }
 .sidebar-column .widget{
     display: flex;

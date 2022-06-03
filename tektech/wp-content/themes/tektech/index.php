@@ -19,7 +19,7 @@
         <?php endwhile;
 
     else :
-        echo '<p>There are no posts!</p>';
+        echo '<article class=\'container\'><p>Aucun contenu disponible pour votre requete !</p></article>';
         
     endif;
 ?>
