@@ -95,7 +95,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-bottom-left-radius: 4.5em;
+    border-bottom-right-radius: 4.5em;
+    box-shadow: 0 0 0.25em 0.025em #ffffff33;
     width: 100%;
+}
+.site-footer{
+    box-shadow: 0 0 0.25em 0.025em #ffffff33;
+    border-top-left-radius: 4.5em;
+    border-top-right-radius: 4.5em;
 }
 .site-header > *,.site-footer > *{
     padding: 2%;
