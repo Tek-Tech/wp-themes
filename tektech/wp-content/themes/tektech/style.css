@@ -9,21 +9,53 @@ Version: 1.0
     color:#ffff;
     color: #cecece;
 }
+@keyframes scaley {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: none;
+    }
+}
+@keyframes fromTop {
+    from{
+        transform: translateY(-100%);
+    }
+    78%{
+
+        transform: none;
+    }
+    82%{
+        transform: translateY(-2%);
+    }
+    89%{
+        transform: translateY(-1%);
+    }
+    92%{
+        transform: translateY(-.95%);
+    }
+    98%{
+        transform: none; 
+    }
+    to{
+        transform: none;
+    }
+}
 
 button,input[type='button'],input[type='submit']{
     margin: 0;
-    margin-left: 30%;
-    margin-right: 30%;
     padding: 2.5%;
     background: #ffffff76;
     border: none;
     color: white;
     font-weight: bolder;
     border-radius: 0.5em;
+    cursor: pointer;
 }
 article{
     background: #1113;
     margin-bottom: 2%;
+    animation: scaley 1.5s 1;
 }
 a{
     color: white;
@@ -42,6 +74,7 @@ body{
     min-height: 100vh;
 }
 .service-box{
+    animation: scaley 2.5s 1;
     background: #11111155;
     display:flex;
     flex-direction:column;
@@ -111,6 +144,7 @@ body{
     border-bottom-right-radius: 4.5em;
     box-shadow: 0 0 0.25em 0.025em #ffffff33;
     width: 100%;
+    animation: fromTop 2s 1;
 }
 .site-footer{
     box-shadow: 0 0 0.25em 0.025em #ffffff33;
@@ -235,4 +269,15 @@ div.container{
 .sidebar-column .widget{
     display: flex;
     flex-direction: column;
+}
+
+
+#searchform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#searchform > div{
+    display: flex;
+    flex-direction: row;
 }
