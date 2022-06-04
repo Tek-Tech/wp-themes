@@ -41,7 +41,6 @@ Version: 1.0
         transform: none;
     }
 }
-
 button,input[type='button'],input[type='submit']{
     margin: 0;
     padding: 5.5%;
@@ -149,7 +148,6 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-
 }
 .service-box .container-content .content-description .content-text{
     padding: 5%;
@@ -321,8 +319,6 @@ div.container{
     display: flex;
     flex-direction: column;
 }
-
-
 #searchform{
     opacity: 0.2;
     display: flex;
@@ -333,17 +329,12 @@ div.container{
     display: flex;
     flex-direction: row;
 }
-
 #searchform:hover{
     opacity: 1;
 }
 .mobilenavigation-menu{
     display: none;
 }
-
-
-
-
 @media screen and (max-width:997px) {
     body{
         margin: 0;
@@ -384,7 +375,6 @@ div.container{
     .site-footer .navigation-menu{
         display: none;
     }
-
     .container.mainbox{
         display: flex;
         flex-direction: column;
@@ -402,7 +392,6 @@ div.container{
         width: 50%;
         height: 50%;
     }
-
     .site-header{
         border-radius: 0;
     }
