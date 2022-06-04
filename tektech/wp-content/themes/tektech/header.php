@@ -32,6 +32,12 @@
 			    <?php wp_nav_menu() ?>
             </nav>
             <nav class="mobilenavigation-menu">
+                <span class='close'>
+                    x
+                </span>
+                <div class="logobox">
+                    <?php the_custom_logo(); ?>
+                </div>
 			    <?php wp_nav_menu() ?>
             </nav>
         </header>
