@@ -195,6 +195,11 @@ body{
 .site-header > *,.site-footer > *{
     padding: 2%;
 }
+.site-footer.has-footer-background{
+    background-image: var(--footerbgurl);
+    min-height:100vh;
+    background-size: 100% 100%;
+}
 .site-header .headerbar{
     display: flex;
     flex-direction: column;
@@ -355,6 +360,14 @@ div.container{
         justify-content: space-between;
         background-size: 100% 100%;
     }
+    .site-footer.has-footer-background{
+        background-image: var(--footerbgurl);
+        min-height:95vh;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        background-size: 100% 100%;
+    }
     .site-header .headerbar .headerself{
         display: flex;
         flex-direction: column;
@@ -366,6 +379,9 @@ div.container{
         justify-content: center;
     }
     .site-header .navigation-menu{
+        display: none;
+    }
+    .site-footer .navigation-menu{
         display: none;
     }
 
